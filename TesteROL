@@ -1,0 +1,60 @@
+CÉNARIOS DE TESTES
+
+Cenário 1: Verificar a disponibilidade de um período mínimo de 4 dias para uma reserva. 
+Justificativa: Este cenário visa assegurar que o ROL consegue verificar e mostrar de forma correta a 
+disponibilidade de quartos para o período solicitado.
+Funcionalidade: Verificar disponibilidade de quarto para uma reserva.
+Cenário: Verificar disponibilidade para um período de 4 dias
+| 05-08-2024 a 09-28-2024 |
+Dado: que eu acesso o site do ROL
+Quando: eu seleciono um período de 4 dias para reserva
+Então: o ROL deve mostrar a disponibilidade dos quartos para o período selecionado
+
+Cenário 2: Selecionar o tipo de quarto STANDARD ST1.
+Justificativa: Garantir que o ROL permita selecionar um tipo específico de quarto.
+Funcionalidade: Selecionar um tipo de quarto.
+Cenário: Selecionar o tipo de quarto STANDARD ST1
+Dado: que eu acessei o site do ROL e verifiquei a disponibilidade
+Quando: eu seleciono o tipo de quarto STANDARD ST1
+Então: o ROL deve confirmar a seleção do tipo de quarto STANDARD ST1
+
+Cenário 3: Adicionar 2 adultos e 1 criança de até 5 anos na reserva.
+Justificativa: Garantir a capacidade do sistema de adicionar hóspedes específicos na reserva.
+Funcionalidade: Adicionar hóspedes na reserva.
+Cenario: Adicionar 2 adultos e 1 criança de até 5 anos na reserva
+Dado: que eu selecionei o tipo de quarto STANDARD ST1
+Quando: eu adiciono 2 adultos e 1 ariança de até 5 anos
+| Adultos Nome: Alisson | Adultos Nome: Samara | Crianças Nome: Olivia |
+Então: o ROL deve mostrar a configuração correta dos hóspedes na reserva
+
+Cenário 4: Efetuar o pagamento com cartão de crédito.
+Justificativa: Garantir que o ROL consegue processar pagamentos com cartão de crédito, finalizando a reserva.
+Funcionalidade: Efetuar pagamento
+Cenário: Efetuar pagamento com cartão de crédito
+Dado: que eu adicionei os hóspedes à reserva
+Quando: eu informo os dados do cartão de crédito
+| Número: 4000 0000 0000 0044 | Nome: DESBRAVADOR SOFTWARE | Validade: 12/23 | CVC: 123 |
+| E-mail: s@s.com | Primeiro nome: Alisson | Sobrenome: Figueiró | Tipo documento: CPF | Documento: 96728794905 |
+E: eu confirmo o pagamento
+Então: o sistema deve processar o pagamento e confirmar a reserva
+
+EXECUÇÃO DOS TESTES E DOCUMENTAÇÃO DOS RESULTADOS
+Cenário 1: Verificar a disponibilidade de um período mínimo de 4 dias para uma reserva.
+Resultado Esperado: O ROL deve mostrar a disponibilidade dos tipos de quartos para o período selecionado.
+Resultado Obtido: O ROL mostrou corretamente a disponibilidade dos tipos de quartos.
+Status: Aprovado
+
+Cenário 2: Selecionar o tipo de quarto STANDARD ST1.
+Resultado Esperado: O ROL deve confirmar a seleção do tipo de quarto STANDARD ST1.
+Resultado Obtido: O ROL confirmou corretamente a seleção do tipo de quarto STANDARD ST1.
+Status: Aprovado
+
+Cenário 3: Adicionar 2 adultos e 1 criança de até 5 anos na reserva.
+Resultado Esperado: O ROL deve mostrar a configuração correta dos hóspedes na reserva.
+Resultado Obtido: O ROL mostrou corretamente a configuração dos hóspedes.
+Status: Aprovado
+
+Cenário 4: Efetuar o pagamento com cartão de crédito.
+Resultado Esperado: O ROL deve processar o pagamento e confirmar a reserva.
+Resultado Obtido: O ROL processou o pagamento e confirmou a reserva corretamente.
+Status: Aprovado
