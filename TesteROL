@@ -1,8 +1,20 @@
+Teste Pratico Analista de QA Desbravador Software
+
+Desafio:
+Acessar o site Reservas Online, verificar a disponibilidade de reservas para um
+determinado período e efetuar uma nova reserva.
+
+Desejável:
+1. Criar os cenários com o mínimo de 04 cenários (explicar e detalhar o porquê escolheu esses cenários).
+2. Executar os testes e documentar os resultados dos seus testes. (Tente focar em cenários críticos).
+3. Utilizar a padrão do BDD (gherkin) para a elaboração dos cenários e casos de teste.
+
 CENÁRIOS DE TESTES
 
 Cenário 1: Verificar a disponibilidade de um período mínimo de 4 dias para uma reserva. 
 Justificativa: Este cenário visa assegurar que o ROL consegue verificar e mostrar de forma correta a 
 disponibilidade de quartos para o período solicitado.
+BDD
 Funcionalidade: Verificar disponibilidade de quarto para uma reserva.
 Cenário: Verificar disponibilidade para um período de 4 dias
 | 05-08-2024 a 09-28-2024 |
@@ -12,6 +24,7 @@ Então: o ROL deve mostrar a disponibilidade dos quartos para o período selecio
 
 Cenário 2: Selecionar o tipo de quarto STANDARD ST1.
 Justificativa: Garantir que o ROL permita selecionar um tipo específico de quarto.
+BDD
 Funcionalidade: Selecionar um tipo de quarto.
 Cenário: Selecionar o tipo de quarto STANDARD ST1
 Dado: que eu acessei o site do ROL e verifiquei a disponibilidade
@@ -20,6 +33,7 @@ Então: o ROL deve confirmar a seleção do tipo de quarto STANDARD ST1
 
 Cenário 3: Adicionar 2 adultos e 1 criança de até 5 anos na reserva.
 Justificativa: Garantir a capacidade do sistema de adicionar hóspedes específicos na reserva.
+BDD
 Funcionalidade: Adicionar hóspedes na reserva.
 Cenario: Adicionar 2 adultos e 1 criança de até 5 anos na reserva
 Dado: que eu selecionei o tipo de quarto STANDARD ST1
@@ -29,7 +43,8 @@ Então: o ROL deve mostrar a configuração correta dos hóspedes na reserva
 
 Cenário 4: Efetuar o pagamento com cartão de crédito.
 Justificativa: Garantir que o ROL consegue processar pagamentos com cartão de crédito, finalizando a reserva.
-Funcionalidade: Efetuar pagamento
+BDD
+Funcionalidade: Efetuar pagamento.
 Cenário: Efetuar pagamento com cartão de crédito
 Dado: que eu adicionei os hóspedes à reserva
 Quando: eu informo os dados do cartão de crédito
