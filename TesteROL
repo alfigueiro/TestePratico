@@ -1,4 +1,4 @@
-CÉNARIOS DE TESTES
+CENÁRIOS DE TESTES
 
 Cenário 1: Verificar a disponibilidade de um período mínimo de 4 dias para uma reserva. 
 Justificativa: Este cenário visa assegurar que o ROL consegue verificar e mostrar de forma correta a 
