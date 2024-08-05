@@ -39,6 +39,7 @@ E: eu confirmo o pagamento
 Então: o sistema deve processar o pagamento e confirmar a reserva
 
 EXECUÇÃO DOS TESTES E DOCUMENTAÇÃO DOS RESULTADOS
+
 Cenário 1: Verificar a disponibilidade de um período mínimo de 4 dias para uma reserva.
 Resultado Esperado: O ROL deve mostrar a disponibilidade dos tipos de quartos para o período selecionado.
 Resultado Obtido: O ROL mostrou corretamente a disponibilidade dos tipos de quartos.
